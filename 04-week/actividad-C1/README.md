@@ -5,5 +5,5 @@ TruequeLocal is a web application designed to allow users to trade items they no
 
 ## How to Run
 1. Clone this repository to your local machine.
-2. Navigate to `04-week/01-session/`.
+2. Navigate to `04-week/actividad-C1/`.
 3. Open `index.html` in any modern browser (or use VS Code Live Server extension).
