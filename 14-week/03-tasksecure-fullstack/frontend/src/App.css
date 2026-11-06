@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.header h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+  color: #60a5fa;
+}
+
+.header p {
+  color: #94a3b8;
+}
+
+.card {
+  background: #1e293b;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #60a5fa;
+}
+
+button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.demo {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #334155;
+}
+
+.demo p {
+  margin: 8px 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logout {
+  background: #dc2626;
+}
+
+.logout:hover {
+  background: #b91c1c;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  margin-top: 10px;
+  background: #334155;
+  border-radius: 8px;
+}
+
+.done {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+.pending {
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.error {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+.hint {
+  margin-top: 20px;
+  color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
